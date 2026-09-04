@@ -277,7 +277,7 @@ bool IsWithinTradingHours() {
 //+------------------------------------------------------------------+
 
 void CalculateMarketParameters() {
-   // Calculate ATR for dynamic TP/SL
+   // Calculate ATR for dynamic TP/SL using built-in iATR function
    dLastATR = iATR(Symbol(), Period(), ATRPeriod);
    
    // Get current spread
